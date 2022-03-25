@@ -1,0 +1,323 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --blue: #1877f2;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background-color: var(--light);
+  color: var(--blue);
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+h4:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  transition: 0.4s;
+}
+
+.title:hover {
+  cursor: default;
+  transform: scale(1.2);
+}
+
+body {
+  background: rgb(255, 255, 255);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.img-left {
+  margin-right: 30px;
+  transition: 0.2s;
+}
+
+.img-left:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background: var(--blue);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.btn:hover {
+  background: var(--light);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  box-shadow: var(--shadow);
+}
+
+.account {
+  background-color: var(--light);
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
+}
+
+h4 {
+  margin-left: 30px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 60%;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.icon2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.icon3 {
+  color: #333333;
+  font-size: 1.2rem;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.post1 {
+  width: 70%;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.friend-name-1 {
+  display: grid;
+  font-size: 1.5rem;
+  width: 80%;
+  margin-left: 70px;
+  border: 10px solid var(--blue);
+  border-style: double;
+  padding: 10px;
+}
+
+.name {
+  display: flex;
+  justify-content: start;
+  font-size: 2rem;
+  margin-left: 40px;
+  width: 80%;
+}
+
+.img {
+  float: left;
+  height: 100%;
+  margin-left: 50px;
+}
+
+.friend-1 {
+  display: grid;
+  width: 80%;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.more {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+}
+
+/* Nav */
+.main-nav ul {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  height: 50px;
+  list-style: none;
+  grid-template-columns: repeat(4, 150px);
+  margin-bottom: 50px;
+}
+
+:placeholder-shown {
+  font-size: 1.2rem;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+a {
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+}
+
+.main-nav a {
+  background: var(--blue);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav {
+  display: grid;
+  grid-template-areas: "main-title Buttons";
+  max-height: 120px;
+}
+
+.main-nav a:hover {
+  background: var(--light);
+  color: var(--blue);
+}
+
+/* Main */
+.main {
+  grid-area: main;
+  min-height: 400px;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 10px;
+}
+
+/* Top Container */
+.top-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "box-1 main box-a"
+    "box-1 main box-b"
+    "box-1 main box-b"
+    "box-1 main box-b";
+}
+
+.btn3 {
+  display: flex;
+  justify-content: center;
+  background: var(--blue);
+  color: var(--light);
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  min-height: 2rem;
+  max-height: 3rem;
+  max-width: 13rem;
+  min-width: 8rem;
+  align-items: center;
+  margin: 10px;
+  box-shadow: var(--shadow);
+  margin-left: 30px;
+}
+
+.btn3:hover {
+  background: var(--light);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.box-1 {
+  display: grid;
+  grid-area: box-1;
+}
+
+.top-box {
+  text-align: center;
+  min-width: 13rem;
+}
+
+.top-box-a {
+  display: grid;
+  gap: 20px;
+  grid-area: box-a;
+}
+
+.top-box-b {
+  grid-area: box-b;
+}
+
+footer {
+  text-align: center;
+}
