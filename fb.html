@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
     <link rel="stylesheet" href="Facebook.css" />
+    <!-- Font Awesome Icons CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -44,37 +45,44 @@
           <i class="fa fa-search"></i>
         </button>
       </div>
-      <!-- Posts of Friends -->
+      <!-- Left Bar -->
       <section class="friends">
         <div class="left-side">
           <div class="sub">
             <img class ="sub-img" src="https://source.unsplash.com/random/40x40" alt="" />
-            <span>My Name</span>
+            <a href="" class="left-sub user-name">My Name</a>
           </div>
           <div class="sub">
-            <i class="fa-solid fa-user-group"></i><!-- <img class ="sub-img" src="https://source.unsplash.com/random/28x28" alt="" /> -->
-            <span>Friends</span>
+            <img class ="sub-img" src="users.png" alt="" />
+            <a href="" class="left-sub news">Friends</a>
           </div>
           <div class="sub">
-            <img class ="sub-img" src="https://source.unsplash.com/random/28x28" alt="" />
-            <span>Feeds</span>
+            <img class ="sub-img" src="news.png" alt="" />
+            <a href="" class="left-sub user-friends">News</a>
           </div>
           <div class="sub">
-            <img class ="sub-img" src="https://source.unsplash.com/random/28x28" alt="" />
-            <span>Groups</span>
+            <img class ="sub-img" src="groups.jpeg" alt="" />
+            <a href="" class="left-sub groups">Groups</a>
           </div>
           <div class="sub">
-            <img class ="sub-img" src="https://source.unsplash.com/random/28x28" alt="" />
-            <span>Marketplace</span>
+            <img class ="sub-img" src="marketplace.png" alt="" />
+            <a href="" class="left-sub marketplace">Marketplace</a>
           </div>
         </div>
+        <!-- Posts of Friends -->
         <div class="posts">
           <div class="my-post"><img class="my-profile-img" src="https://source.unsplash.com/random/40x40" alt="" /><input class ="my-post-input" type="text" placeholder="What are you thinking?">
           </div>
           <div class="friend">
-            <h3 class="friend-name">Friend 1</h3>
-            <img class="friend-img" src="https://source.unsplash.com/random/102x100" alt="" />
-            <p class="name">name</p>
+            <div class="friend-head">
+              <img class="friend-img" src="https://source.unsplash.com/random/102x100" alt="" />
+              <h3 class="friend-name">Friend 1</h3>
+            </div>
+            <div class="friend-p">
+              <p class="name">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Culpa vero unde quam laborum facilis! Laborum dolorem magni sed numquam 
+                dignissimos.</p>
+            </div>
           </div>
           <div class="friend-2">
             <h3 class="friend-name">Friend 2</h3>
@@ -82,9 +90,32 @@
             <p class="name">name</p>
           </div>
         </div>
+        <!-- Right Bar -->
         <div class="right-side">
-          <img class="right-img" src="https://source.unsplash.com/random/100x100" alt="" />
-          <p>Right</p>
+          <div class="bar">
+            <h3 class="online-friends">Online Friends</h3>
+          </div>
+          <hr class="right-bar-hr">
+          <div class="sub">
+            <img class="sub-img" src="https://source.unsplash.com/random/33x33" alt="" />
+            <a href="" class="right-sub user-name">Friend 1</a>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="https://source.unsplash.com/random/34x34" alt="" />
+            <a href="" class="right-sub user-name">Friend 2</a>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="https://source.unsplash.com/random/35x35" alt="" />
+            <a href="" class="right-sub user-name">Friend 3</a>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="https://source.unsplash.com/random/36x36" alt="" />
+            <a href="" class="right-sub user-name">Friend 4</a>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="https://source.unsplash.com/random/37x37" alt="" />
+            <a href="" class="right-sub user-name">Friend 5</a>
+          </div>
         </div>
       </section>
     </div>
