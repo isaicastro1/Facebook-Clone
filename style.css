@@ -178,10 +178,6 @@
 
   .friend {
     display: block;
-
-    /* justify-content: flex-start;
-    align-items: top;
-    flex-direction: column; */
     background-color: white;
     border-radius: 10px;
     border: none; 
