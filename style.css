@@ -134,6 +134,7 @@
   .search-bar-2 {
     display: none;
     height: 20px;
+    max-height: 25px;
     width: 15rem;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -143,6 +144,7 @@
     display: none;
     border-radius: 10px;
     margin-left: 2px;
+    height: 26px;
   }
 
   .submit-2:hover {
@@ -337,8 +339,13 @@
     }
 
     .search-bar-2 {
-      height: 1.4rem;
+      max-height: 25px;
       width: 15rem;
+    }
+
+    .submit-2 {
+      height: 1.4rem;
+
     }
 
     .links {
