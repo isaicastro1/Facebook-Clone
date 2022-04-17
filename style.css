@@ -203,8 +203,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    max-width: 600px;
     padding: 60px 10px 10px;
+    word-wrap: break-all;
   }
 
   .friend-2 {
