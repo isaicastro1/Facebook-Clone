@@ -338,6 +338,10 @@
       display: flex;
     }
 
+    .search {
+      max-height: 70px;
+    }
+
     .search-bar-2 {
       max-height: 25px;
       width: 40vw;
