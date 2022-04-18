@@ -183,7 +183,7 @@
     background-color: white;
     border-radius: 10px;
     border: none; 
-    height: 600px;
+    height: 700px;
     max-width: 600px;
     min-width: none;
   }
@@ -331,6 +331,71 @@
   .right-bar-hr {
     height: 3px;
     background-color: var(--blue);
+  }
+
+  .name {
+    margin-bottom: 5px;
+  }
+
+  .friend-img-post {
+    border-radius: 0%;
+    min-width: 100%;
+    max-height: 500px;
+  }
+
+  .post-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    gap: 10px;
+  }
+
+  .like {
+    width: 33%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: gray;
+    transition: 0.2s;
+    font-weight: bold;
+  }
+
+  .like:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .comment {
+    width: 33%;
+    height: 40px;
+    border: none;
+    color: gray;
+    background-color: white;
+    transition: 0.2s;
+    font-weight: bold;
+  }
+
+  .comment:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .share {
+    width: 33%;
+    height: 40px;
+    border: none;
+    color: gray;
+    background-color: white;
+    transition: 0.2s;
+    font-weight: bold;
+  }
+
+  .share:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    transform: scale(1.1);
   }
 
   @media (max-width: 600px) {
