@@ -200,10 +200,10 @@
   }
 
   .friend-p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     max-width: 600px;
+    min-height: 60px;
+    max-height: auto;
     padding: 60px 10px 10px;
     word-wrap: break-all;
   }
@@ -335,10 +335,6 @@
     background-color: var(--blue);
   }
 
-  .name {
-    margin-bottom: 5px;
-  }
-
   .friend-img-post {
     border-radius: 0%;
     width: 100%;
@@ -424,6 +420,29 @@
   }
 
   .search-friends-btn:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+  }
+
+  .post-settings {
+    position: relative;
+    float: right;
+    padding: 10px;
+  }
+
+  .post-settings-btn {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .post-settings-btn:hover {
     cursor: pointer;
     background-color: var(--hover);
   }
