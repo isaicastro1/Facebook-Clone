@@ -185,8 +185,8 @@
     background-color: white;
     border-radius: 10px;
     border: none; 
-    height: 700px;
-    max-height: 700px;
+    height: 710px;
+    max-height: 710px;
     max-width: 600px;
     min-width: none;
   }
@@ -301,6 +301,7 @@
   }
 
   .sub:hover {
+    cursor: pointer;
     background-color: #C7CED8;
   }
 
@@ -345,7 +346,7 @@
   .post-btn {
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: 15px;
     gap: 10px;
   }
 
