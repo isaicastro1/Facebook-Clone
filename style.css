@@ -29,6 +29,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    margin-right: 10px;
     background-color: var(--blue);
   }
   
