@@ -3,6 +3,7 @@
     --dark: #333;
     --light: #6da8f3;
     --blue: #1877f2;
+    --hover: #dedddd;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   }
   
@@ -184,6 +185,7 @@
     border-radius: 10px;
     border: none; 
     height: 700px;
+    max-height: 700px;
     max-width: 600px;
     min-width: none;
   }
@@ -339,7 +341,7 @@
 
   .friend-img-post {
     border-radius: 0%;
-    min-width: 100%;
+    width: 100%;
     max-height: 500px;
   }
 
@@ -396,6 +398,34 @@
     background-color: var(--primary);
     cursor: pointer;
     transform: scale(1.1);
+  }
+
+  .online-friends {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+  }
+
+  .search-friends-btn {
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-right: 20px;
+  }
+
+  .search-friends-btn:hover {
+    cursor: pointer;
+    background-color: var(--hover);
   }
 
   @media (max-width: 600px) {
@@ -517,8 +547,8 @@
   @media (min-width: 900px) {
     .right-side {
       display: block;
+      text-align: left;
       margin: 20px 0 0 0;
-      border: 1px solid var(--blue);
       border-radius: 10px;
     }
   
