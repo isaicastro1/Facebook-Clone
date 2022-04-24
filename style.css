@@ -10,6 +10,7 @@
   html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    max-height: auto;
   }
   
   body {
@@ -57,14 +58,6 @@
   .icons {
     display: none;
   }
-  
-  .search-bar {
-    height: 20px;
-    width: 25vw;
-    display: none;
-    border-radius: 10px;
-    border: 1px solid var(--blue);
-  }
 
   input:focus {
     outline: none;
@@ -72,22 +65,6 @@
 
   input:focus::placeholder {
     color: transparent;
-  }
-  
-  .submit {
-    display: none;
-    border-radius: 10px;
-    margin-left: 2px;
-  }
-
-  .submit:hover {
-    cursor: pointer;
-    opacity: 0.9;
-  }
-
-  .search-bar:hover {
-    cursor: pointer;
-    opacity: 0.9;
   }
   
   .links ul {
@@ -103,27 +80,18 @@
   .links li a {
     font-size: 3vw;
     text-decoration: none;
-    color: white;
+    color: var(--blue);
     padding: 1rem;
     display: block;
   }
 
-  .nav-item {
-    text-align: center;
-    transition: 0.1s;
-  }
-  
-  .nav-item:hover {
-    background-color: #4390f3;
-    transform: scale(1.1);
-  }
-
   .toggle-button {
     position: absolute;
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     right: 1rem;
-    display: none;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     width: 30px;
     height: 21px;
@@ -139,40 +107,6 @@
     width: 100%;
     background-color: white;
     border-radius: 10px;
-  }
-  
-  .search {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  .search-bar-2 {
-    display: none;
-    height: 20px;
-    max-height: 25px;
-    width: 15rem;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    background: #f0f2f5;
-  }
-  
-  .submit-2 {
-    display: none;
-    border-radius: 10px;
-    margin-left: 2px;
-    height: 26px;
-    background: #f0f2f5;
-  }
-
-  .submit-2:hover {
-    cursor: pointer;
-    opacity: 0.9;
-  }
-
-  .search-bar-2:hover {
-    cursor: pointer;
-    opacity: 0.9;
   }
   
   input,
@@ -426,6 +360,7 @@
   .bar {
     display: flex;
     justify-content: space-between;
+    background-color: #1877f2;
     align-items: center;
     height: 60px;
     width: 100%;
@@ -469,70 +404,69 @@
     background-color: var(--hover);
   }
 
-  .submit {
-    display: flex;
+  .links {
+    min-width: 20vw;
+  }
+
+  .icons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin-left: 1px;
+    margin-right: 10vw;
     align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 50px;
-    background-color: white;
-    color: var(--blue);
-    border: 1px solid var(--blue);
   }
 
-  @media (max-width: 599px) {
-    .toggle-button {
-      display: flex;
-    }
-
-    .my-profile-img {
-      min-width: 20px;
-      max-width: 30px;
-      min-height: 20px;
-      max-height: 30px;
-      margin: 0 10px 0 10px;
-    }
-
-    .my-post-input {
-      margin: 0;
-      width: 18rem;
-      height: 20px;
-      font-size: 1rem;
-    }
-
-    .friend, .friend-2{
-      height: 510px;
-      max-height: 710px;
-    }
+  .icon {
+    display: block;
+    font-size: larger;
+    width: 20vw;
+    min-width: 5vw;
+    height: 100%;
+    border: none;
+    color: white;
+    background: var(--blue);
   }
+
+  .icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .icon:focus {
+    border-bottom: 4px solid white;
+  }
+
+  
   
   @media (max-width: 600px) {
+    .title-btn {
+      background-color: white;
+    }
+
+    .toggle-button .bar {
+      background-color: var(--blue);
+    }
+
+    .brand-title {
+      color: var(--blue);
+    }
+    
     .nav-item {
       display: none;
       text-align: center;
       width: 30vw; 
       margin: 0 auto 0 auto;
-      transition: 0.1s;
+      color: #4390f3;
+      background-color: white;
+      border-radius: 20px;
     }
     
     .nav-item:hover {
-      color: #4390f3;
-      background-color: white;
-      transform: scale(1.1);
-    }
-    .search {
-     max-height: 70px;
-    }
-
-    .search-bar-2 {
-      max-height: 25px;
-      width: 40vw;
-    }
-
-    .submit-2 {
-      height: 2rem;
-      margin-right: 10px;
+      color: white;
+      background-color: var(--blue);
     }
 
     .links {
@@ -541,9 +475,13 @@
     }
   
     .navbar {
+      background: white;
       flex-direction: column;
       align-items: flex-start;
-      border: 1px solid var(--blue);
+    }
+
+    .icon {
+      margin-top: 5px;
     }
   
     .links ul {
@@ -572,6 +510,43 @@
     .friend, .friend-2 {
       margin: 20px auto 0 auto;
       width: 80vw;
+      height: 570px;
+      max-height: 710px;
+    }
+
+    .toggle-button {
+      display: flex;
+      align-items: center;
+      margin-top: -2px;
+    }
+
+    .my-profile-img {
+      min-width: 20px;
+      max-width: 30px;
+      min-height: 20px;
+      max-height: 30px;
+      margin: 0 10px 0 10px;
+    }
+
+    .my-post-input {
+      margin: 0;
+      width: 12rem;
+      height: 15px;
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 601px) {
+    .icon {
+      width: 10vw;
+    }
+
+    .nav-item {
+      display: none;
+    }
+
+    .links {
+      display: none;
     }
   }
   
@@ -595,13 +570,6 @@
       margin-top: 15px;
     }
 
-    .search-bar {
-      display: none;
-      width: 30px;
-      height: 30px;
-      border-radius: 50px;
-    }
-
     .title {
       display: inline-flex;
       align-items: center;
@@ -611,40 +579,23 @@
       width: 80vw;
       margin-top: 20px;
     }
+
+    .toggle-button {
+      top: 14px;
+    }
   }
   
   @media (max-width: 749px) {
     .friend, .friend-2 {
       margin: 20px auto;
-        width: 80vw;
-    }
-
-    .search-bar-2 {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      border: 1px solid var(--blue);
-    }
-  
-    .submit-2 {
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-      height: 25px;
-      color: var(--blue);
-      border: 2px solid var(--blue);
+      width: 80vw;
     }
 
     .toggle-button {
       max-width: 25px;
       max-height: 20px;
-      top: 10px;
+      top: 15px;
     }
-
-    .search {
-      display: none;
-    }
-
     .my-post {
       margin-top: 20px;
     }
@@ -673,38 +624,6 @@
     .my-post {
       width: 600px;
     }
-  }
-
-  @media (max-width: 1099px) {
-    .icons {
-      display: inline-flex;
-      justify-content: space-around;
-      width: 100%;
-      height: 60px;
-      margin-left: 1px;
-      background: white;
-      align-items: center;
-    }
-
-    .icon {
-      display: block;
-      font-size: larger;
-      width: 20vw;
-      height: 100%;
-      border: none;
-      background: white;
-    }
-
-    .icon:hover {
-      color: #1877f2;
-      border-bottom: 1px solid #1877f2;
-      cursor: pointer;
-    }
-
-    .icon:focus {
-      color: #1877f2;
-      border-bottom: 1px solid #1877f2;
-    } 
   }
   
   @media (min-width: 1100px) {
