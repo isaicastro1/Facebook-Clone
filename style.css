@@ -207,6 +207,8 @@
   .right-side {
     display: none;
     max-width: 360px;
+    top: 20px;
+    background-color: white;
   }
   
   .left-side {
@@ -242,6 +244,7 @@
 
   .friend, .friend-2 {
     width: 100vw;
+    height: 710px;
   }
 
   .sub {
@@ -250,6 +253,7 @@
     position: relative;
     border-radius: 10px;
     height: 45px;
+    margin: 5px;
   }
 
   .sub:hover {
@@ -321,6 +325,10 @@
     transform: scale(1.1);
   }
 
+  .like:focus {
+    color: var(--blue);
+  }
+
   .comment {
     width: 33%;
     height: 40px;
@@ -330,6 +338,10 @@
     background-color: white;
     transition: 0.2s;
     font-weight: bold;
+  }
+
+  .comment:focus {
+    color: var(--blue);
   }
 
   .comment:hover {
@@ -355,6 +367,10 @@
     transform: scale(1.1);
   }
 
+  .share:focus {
+    color: var(--blue);
+  }
+
   .online-friends {
     float: left;
     padding-left: 10px;
@@ -375,7 +391,7 @@
     border-radius: 50%;
     color: var(--blue);
     font-size: 1.1rem;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .search-friends-btn:hover {
@@ -613,9 +629,9 @@
 
     .right-side {
       display: inline-block;
-      height: auto;
+      height: max-content;
       text-align: left;
-      margin: 0px 0 0 0;
+      margin: 15px 0 0 0;
       border-radius: 10px;
     }
 
