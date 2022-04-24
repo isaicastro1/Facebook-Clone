@@ -308,6 +308,7 @@
     width: 33%;
     height: 40px;
     border: none;
+    border-radius: 20px;
     background-color: white;
     color: gray;
     transition: 0.2s;
@@ -324,6 +325,7 @@
     width: 33%;
     height: 40px;
     border: none;
+    border-radius: 20px;
     color: gray;
     background-color: white;
     transition: 0.2s;
@@ -340,6 +342,7 @@
     width: 33%;
     height: 40px;
     border: none;
+    border-radius: 20px;
     color: gray;
     background-color: white;
     transition: 0.2s;
