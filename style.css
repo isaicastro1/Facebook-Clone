@@ -140,6 +140,7 @@
     width: 15rem;
     border-radius: 10px;
     margin-bottom: 20px;
+    background: #f0f2f5;
   }
   
   .submit-2 {
@@ -147,6 +148,7 @@
     border-radius: 10px;
     margin-left: 2px;
     height: 26px;
+    background: #f0f2f5;
   }
 
   .submit-2:hover {
@@ -239,6 +241,8 @@
   .my-profile-img {
     align-items: center;
     margin: 0 20px 0 20px;
+    min-width: auto;
+    min-height: auto;
   }
 
   img:hover {
@@ -339,8 +343,9 @@
 
   .friend-img-post {
     border-radius: 0%;
-    width: 100%;
+    max-width: 100%;
     max-height: 500px;
+    overflow: hidden;
   }
 
   .post-btn {
@@ -449,6 +454,22 @@
     background-color: var(--hover);
   }
 
+  @media (max-width: 300px) {
+    .my-profile-img {
+      min-width: 20px;
+      max-width: 30px;
+      min-height: 20px;
+      max-height: 30px;
+      margin: 0 10px 0 10px;
+    }
+
+    .my-post-input {
+      margin: 0;
+      max-width: 50vw;
+      font-size: 0.7rem;
+    }
+  }
+  
   @media (max-width: 600px) {
     .toggle-button {
       display: flex;
@@ -551,7 +572,7 @@
       display: flex;
       justify-content: center;
       margin-top: 20px;
-      border: 2px solid var(--blue);
+      border: 1px solid var(--blue);
     }
   
     .submit-2 {
@@ -559,9 +580,22 @@
       align-items: center;
       margin-top: 20px;
       height: 25px;
-      background-color: white;
       color: var(--blue);
       border: 2px solid var(--blue);
+    }
+
+    .toggle-button {
+      max-width: 25px;
+      max-height: 20px;
+      top: 10px;
+    }
+
+    .search {
+      display: none;
+    }
+
+    .my-post {
+      margin-top: 20px;
     }
   }
   
