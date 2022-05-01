@@ -67,24 +67,6 @@
   input:focus::placeholder {
     color: transparent;
   }
-  
-  /* .links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .links li {
-    list-style: none;
-  }
-  
-  .links li a {
-    font-size: 3vw;
-    text-decoration: none;
-    color: var(--blue);
-    padding: 1rem;
-    display: block;
-  } */
 
   .toggle-button {
     margin-bottom: 30px;
@@ -133,6 +115,10 @@
   }
 
   .friend {
+    max-width: 60vw;
+  }
+
+  /* .friend {
     display: block;
     background-color: white;
     border-radius: 10px;
@@ -141,27 +127,43 @@
     max-height: 730px;
     max-width: 600px;
     min-width: none;
-  }
+  } */
 
   .friend-head {
     display: flex;
-    position: absolute;
+    justify-content: start;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 10rem;
+    width: 100%;
   }
 
   .friend-p {
     display: block;
-    max-width: 600px;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    max-width: 700px;
     min-height: 60px;
     max-height: auto;
-    padding: 60px 10px 10px;
+    padding: 10px 0 10px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     word-wrap: break-all;
+    background-color: white;
   }
 
-  .friend-2 {
+  .friend-name {
+    width: 12rem;
+    padding: 10px;
+  }
+
+  .name {
+    padding: 0 10px 0 10px;
+  }
+
+  .posts {
+    max-width: 60vw;
+  }
+
+  /* .friend-2 {
     display: block;
     background-color: white;
     border-radius: 10px;
@@ -170,7 +172,7 @@
     max-height: 740px;
     max-width: 600px;
     min-width: none;
-  }
+  } */
   
   right-img, friend-img {
     display: block;
@@ -183,10 +185,9 @@
   .friend-img {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 40px;
     max-height: 40px;
+    padding: 25px;
   }
 
   .my-profile-img {
@@ -224,8 +225,8 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 auto;
-    width: 80vw;
-    max-width: 600px;
+    width: 40vw;
+    /* max-width: 600px; */
     height: 60px;
     border-radius: 10px;
     background-color: white;
@@ -233,7 +234,7 @@
 
   .my-post-input {
     border-radius: 15px;
-    width: 20rem;
+    max-width: 20rem;
     padding: 10px;
     margin: 10px;
     border: none;
@@ -245,10 +246,11 @@
     background-color: #D0D7E1;
   }
 
-  .friend, .friend-2 {
+  /* .friend, .friend-2 {
     width: 100vw;
     height: 48rem;
-  }
+    min-height: 35rem;
+  } */
 
   .sub {
     display: flex;
@@ -298,19 +300,34 @@
 
   .friend-img-post {
     border-radius: 0%;
-    max-width: 100%;
+    max-width: 700px;
     width: 100%;
     max-height: 500px;
     object-fit: cover;
   }
 
+  .image-post {
+    display: flex;
+    justify-content: center;
+  }
+
   .post-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .reaction-btns {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 4rem;
-    margin: 5px;
-    gap: 10px;
+    height: 5rem;
+    width: 100%;
+    max-width: 700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
   }
 
   .like {
@@ -405,20 +422,22 @@
   }
 
   .post-settings {
-    position: relative;
-    float: right;
-    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    width: 100%;
+    height: 90px;
   }
 
   .post-settings-btn {
     display: flex;
-    justify-content: center;
     font-size: 1.2rem;
     font-weight: 900;
     height: 30px;
     width: 30px;
     border: none;
     border-radius: 50%;
+    margin-right: 10px;
     background-color: white;
   }
 
@@ -575,11 +594,12 @@
       max-width: 600px;
     }
 
-    .friend, .friend-2 {
+    /* .friend, .friend-2 {
       margin: 20px auto 0 auto;
       width: 80vw;
-      height: 125vw;
-    }
+      height: 145vw;
+      min-height: 35rem;
+    } */
 
     .my-profile-img {
       min-width: 20px;
