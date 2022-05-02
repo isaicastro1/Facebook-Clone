@@ -590,7 +590,7 @@
     }
 
     .my-post {
-      width: 80vw;
+      width: 70vw;
       max-width: 600px;
     }
 
@@ -666,6 +666,8 @@
     
     .my-post {
       margin-top: 15px;
+      max-width: 700px;
+      width: 60vw;
     }
 
     .title {
@@ -687,6 +689,8 @@
 
     .my-post {
       margin-top: 20px;
+      width: 700px;
+      max-width: 60vw;
     }
   }
   
@@ -716,7 +720,13 @@
     }
 
     .my-post {
-      width: 600px;
+      width: 60vw;
+      max-width: 700px;
+    }
+
+    .my-post-input {
+      width: 25rem;
+      max-width: 40vw;
     }
   }
   
