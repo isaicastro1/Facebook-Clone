@@ -114,21 +114,6 @@
       width: 97vw;
   }
 
-  .friend {
-    max-width: 60vw;
-  }
-
-  /* .friend {
-    display: block;
-    background-color: white;
-    border-radius: 10px;
-    border: none; 
-    height: 710px;
-    max-height: 730px;
-    max-width: 600px;
-    min-width: none;
-  } */
-
   .friend-head {
     display: flex;
     justify-content: start;
@@ -162,17 +147,6 @@
   .posts {
     max-width: 60vw;
   }
-
-  /* .friend-2 {
-    display: block;
-    background-color: white;
-    border-radius: 10px;
-    border: none;
-    height: 600px;
-    max-height: 740px;
-    max-width: 600px;
-    min-width: none;
-  } */
   
   right-img, friend-img {
     display: block;
@@ -226,7 +200,6 @@
     align-items: center;
     margin: 0 auto 0 auto;
     width: 40vw;
-    /* max-width: 600px; */
     height: 60px;
     border-radius: 10px;
     background-color: white;
@@ -245,12 +218,6 @@
     cursor: pointer;
     background-color: #D0D7E1;
   }
-
-  /* .friend, .friend-2 {
-    width: 100vw;
-    height: 48rem;
-    min-height: 35rem;
-  } */
 
   .sub {
     display: flex;
@@ -477,6 +444,10 @@
     border-bottom: 4px solid white;
   }
 
+  .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    display: none;
+  }
+
   a {
     text-decoration: none;
   }
@@ -512,7 +483,7 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     width: 205px;
-    height: 200px;
+    height: auto;
   }
 
   .popover__content:before {
@@ -557,6 +528,14 @@
     transform: scale(1.1);
     background-color: var(--hover);
   }
+
+  .profile-nav {
+    margin-top: 10px;
+  }
+
+  .log-out-nav {
+    margin-bottom: 10px;
+  }
   
   @media (max-width: 600px) {
     .title-btn {
@@ -594,12 +573,9 @@
       max-width: 600px;
     }
 
-    /* .friend, .friend-2 {
-      margin: 20px auto 0 auto;
-      width: 80vw;
-      height: 145vw;
-      min-height: 35rem;
-    } */
+    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: block;
+    }
 
     .my-profile-img {
       min-width: 20px;
@@ -626,8 +602,8 @@
       display: none;
     }
 
-    .links {
-      display: none;
+    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: block;
     }
 
     .toggle-button {
@@ -655,7 +631,12 @@
       visibility: visible;
       transform: translate(-10px, 70px);
       transition: all 0.1s ;
-  }
+    }
+
+    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: block;
+    }
+
   }
   
   @media (min-width: 750px) {
@@ -674,8 +655,12 @@
       display: inline-flex;
       align-items: center;
     }
+
+    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: block;
+    }
   
-    .friend, .friend-2 {
+    .friend {
       width: 80vw;
       margin-top: 20px;
     }
@@ -691,6 +676,10 @@
       margin-top: 20px;
       width: 700px;
       max-width: 60vw;
+    }
+
+    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: block;
     }
   }
   
@@ -714,9 +703,17 @@
       margin-top: 0;
     }
 
-    .friend, .friend-2{
+    .friend{
       width: 80vw;
       margin: 20px auto;
+    }
+
+    .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: block;
+    }
+
+    .friends-nav {
+      display: none;
     }
 
     .my-post {
@@ -744,6 +741,10 @@
   
     .friend {
       margin-top: 20px;
+    }
+
+    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+      display: none;
     }
   
     section {
