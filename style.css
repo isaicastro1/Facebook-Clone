@@ -209,7 +209,7 @@
     border-radius: 15px;
     max-width: 20rem;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 15px 10px 10px;
     border: none;
     background-color: #f0f2f5;
   }
@@ -588,7 +588,7 @@
 
     .my-post-input {
       margin: 0;
-      width: 12rem;
+      width: 18rem;
       height: 15px;
       font-size: 1rem;
     }
