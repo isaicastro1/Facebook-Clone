@@ -110,8 +110,9 @@
   }
   
   .friends {
-      height: 200vh;
-      width: 97vw;
+      min-height: 200vh;
+      max-height: auto;
+      width: 100vw;
   }
 
   .friend-head {
@@ -207,7 +208,7 @@
 
   .my-post-input {
     border-radius: 15px;
-    max-width: 20rem;
+    max-width: 60vw;
     padding: 10px;
     margin: 10px 15px 10px 10px;
     border: none;
@@ -446,7 +447,11 @@
     border-bottom: 4px solid white;
   }
 
-  .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+  .friends-nav, 
+  .messages-nav, 
+  .news-nav, 
+  .groups-nav, 
+  .marketplace-nav {
     display: none;
   }
 
@@ -574,7 +579,11 @@
       width: 80vw;
     }
 
-    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .friends-nav, 
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: block;
     }
 
@@ -588,6 +597,7 @@
 
     .my-post-input {
       margin: 0;
+      max-width: 100vw;
       width: 18rem;
       height: 15px;
       font-size: 1rem;
@@ -603,7 +613,11 @@
       display: none;
     }
 
-    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .friends-nav, 
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: block;
     }
 
@@ -618,6 +632,10 @@
 
     .friend {
       height: 130vw;
+    }
+
+    .my-post-input {
+      width: 20rem;
     }
   }
   
@@ -634,7 +652,11 @@
       transition: all 0.1s ;
     }
 
-    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .friends-nav, 
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: block;
     }
 
@@ -649,7 +671,11 @@
     .my-post {
       margin-top: 15px;
       max-width: 700px;
-      width: 70vw;
+      width: 80vw;
+    }
+
+    .my-post-input {
+      width: 24rem;
     }
 
     .title {
@@ -657,7 +683,11 @@
       align-items: center;
     }
 
-    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .friends-nav, 
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: block;
     }
   
@@ -679,7 +709,11 @@
       max-width: 80vw;
     }
 
-    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .friends-nav, 
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: block;
     }
   }
@@ -704,12 +738,15 @@
       margin-top: 0;
     }
 
-    .friend{
+    .friend {
       width: 80vw;
       margin: 20px auto;
     }
 
-    .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: block;
     }
 
@@ -724,7 +761,7 @@
 
     .my-post-input {
       width: 25rem;
-      max-width: 40vw;
+      max-width: 60vw;
     }
   }
   
@@ -744,7 +781,11 @@
       margin-top: 20px;
     }
 
-    .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
+    .friends-nav, 
+    .messages-nav, 
+    .news-nav, 
+    .groups-nav, 
+    .marketplace-nav {
       display: none;
     }
   
