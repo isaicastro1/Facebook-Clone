@@ -145,7 +145,7 @@
   }
 
   .posts {
-    max-width: 70vw;
+    max-width: 80vw;
   }
   
   right-img, friend-img {
@@ -199,7 +199,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 auto;
-    width: 70vw;
+    width: 80vw;
     height: 60px;
     border-radius: 10px;
     background-color: white;
@@ -569,7 +569,7 @@
     }
 
     .my-post {
-      width: 70vw;
+      width: 80vw;
     }
 
     .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
@@ -674,7 +674,7 @@
     .my-post {
       margin-top: 20px;
       width: 700px;
-      max-width: 70vw;
+      max-width: 80vw;
     }
 
     .friends-nav, .messages-nav, .news-nav, .groups-nav, .marketplace-nav {
