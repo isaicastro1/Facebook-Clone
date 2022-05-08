@@ -188,14 +188,17 @@
   
   .right-side {
     display: none;
-    max-width: 360px;
-    top: 20px;
+    width: 18vw;
+    position: fixed;
+    top: 70px;
+    right: 25px;
     background-color: white;
   }
   
   .left-side {
     display: none;
     max-width: 360px;
+    position: fixed;
   }
   
   .my-post {
@@ -578,6 +581,7 @@
 
     .posts {
       width: 100vw;
+      margin-top: 115px;
     }
 
     .my-post {
@@ -726,14 +730,15 @@
   @media (min-width: 900px) {
     section {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
       gap: 10px;
-      margin-left: 20px;
     }
 
     .right-side {
       display: inline-block;
       height: max-content;
+      width: 30vw;
+      right: 40px;
       text-align: left;
       margin: 15px 0 0 0;
       border-radius: 10px;
@@ -744,7 +749,7 @@
     }
 
     .friend {
-      width: 80vw;
+      width: 60vw;
       margin: 20px auto;
     }
 
@@ -759,13 +764,18 @@
       display: none;
     }
 
+    .posts {
+      width: 60vw;
+      margin-left: 20px;
+    }
+
     .my-post {
-      width: 70vw;
+      width: 60vw;
       max-width: 700px;
     }
 
     .my-post-input {
-      width: 25rem;
+      width: 20rem;
       max-width: 60vw;
     }
   }
@@ -773,13 +783,35 @@
   @media (min-width: 1100px) {
     .left-side {
       display: block;
-      margin: 20px 0 0 0px;
-      max-width: 360px;
+      top: 70px;
+      max-width: 25vw;
+      width: 20vw;
+    }
+
+    .right-side {
+      width: 20vw;
+      max-width: 25vw;
+      right: 20px;
+    }
+
+    .posts {
+      position: relative;
+      /* margin-left: 25vw; */
+      width: 50vw;
+      left: 25vw;
+    }
+
+    .my-post {
+      width: 50vw;
+    }
+
+    .my-post-input {
+      width: 30vw;
+      max-width: 400px;
     }
 
     .sub {
       display: block;
-
     }
   
     .friend {
@@ -794,9 +826,9 @@
       display: none;
     }
   
-    section {
+    .friends {
       display: grid;
-      grid-template-columns: 1fr 1.5fr 1fr;
-      gap: 20px;
+      grid-template-columns: 25vw 50vw 25vw;
+      /* gap: 20px; */
     }
   }
