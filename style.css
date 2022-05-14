@@ -21,6 +21,43 @@
     background: #EBEDF0;
   }
 
+  .friends-left {
+    height: 100vh;
+    background-color: white;
+    width: 30vw;
+    padding-top: 65px;
+  }
+
+  .friends-left-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    height: 100px;
+  }
+
+  .friends-left-title {
+    display: inline-block;
+    font-family: 'Helvetica';
+    padding-left: 30px;
+    width: 10vw;
+    margin: 0;
+  }
+
+  .friends-settings {
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #FCFCFC;
+    font-size: large;
+    height: 40px;
+    width: 40px;
+  }
+
+  .friends-settings:hover  {
+    cursor: pointer;
+    background-color: #e4e6eb;
+  }
+
   img {
     border-radius: 50px;
   }
@@ -30,6 +67,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    margin-top: 0;
     z-index: 1;
     width: 100vw;
     max-height: 70px;
