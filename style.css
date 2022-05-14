@@ -491,13 +491,13 @@
     gap: 10px;
     visibility: hidden;
     position: absolute;
-    left: -150px;
+    left: -152px;
     transform: translate(0, 10px);
     background-color: white;
     border: 2px solid var(--blue);
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    width: 205px;
+    width: 200px;
     height: auto;
   }
 
@@ -796,7 +796,6 @@
 
     .posts {
       position: relative;
-      /* margin-left: 25vw; */
       width: 50vw;
       left: 25vw;
     }
@@ -825,10 +824,14 @@
     .marketplace-nav {
       display: none;
     }
+
+    .popover__content {
+      display: block;
+      text-align: center;
+    }
   
     .friends {
       display: grid;
       grid-template-columns: 25vw 50vw 25vw;
-      /* gap: 20px; */
     }
   }
