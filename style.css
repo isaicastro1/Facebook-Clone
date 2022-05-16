@@ -45,6 +45,9 @@
   }
 
   .friends-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 20px;
     border-radius: 50%;
     background-color: #FCFCFC;
