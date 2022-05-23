@@ -40,7 +40,7 @@
     display: inline-block;
     font-family: 'Helvetica';
     padding-left: 30px;
-    width: 10vw;
+    width: 12vw;
     margin: 0;
   }
 
@@ -62,11 +62,28 @@
   }
 
   .friends-left-nav {
+    display: flex;
+    align-items: center;
     height: 50px;
     width: 340px;
     margin: 0 10px 0 10px;
     border-radius: 10px;
-    border: 1px solid black;
+  }
+
+  .friends-left-nav:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+  }
+
+  .material-symbols-outlined.md-48 {
+    font-size: 40px;
+    padding: 0 10px 0 10px;
+  }
+
+  .friends-left-nav-headers {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 15px;
   }
 
   img {
