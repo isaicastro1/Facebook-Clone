@@ -38,7 +38,8 @@
 
   .friends-left-title {
     display: inline-block;
-    font-family: 'Helvetica';
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
     padding-left: 30px;
     width: 12vw;
     margin: 0;
@@ -617,6 +618,23 @@
 
   .log-out-nav {
     margin-bottom: 10px;
+  }
+
+  @media (max-width: 500px) {
+    .home, .requests, .personalized {
+      display: none;
+    }
+
+    .friend-suggestions, .friend-all {
+      display: flex;
+    }
+
+    .friends-left {
+      width: 100vw;
+    }
+    .friends-left-header {
+      width: 100vw;
+    }
   }
   
   @media (max-width: 600px) {
