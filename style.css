@@ -45,6 +45,10 @@
     margin: 0;
   }
 
+  .friends-header-buttons {
+    display: flex;
+  }
+
   .friends-settings {
     display: flex;
     justify-content: center;
@@ -629,11 +633,17 @@
       display: flex;
     }
 
+    .friends-left-title {
+      width: 30vw;
+    }
+
     .friends-left {
       width: 100vw;
     }
+
     .friends-left-header {
       width: 100vw;
+      height: 10vh;
     }
   }
   
