@@ -631,13 +631,15 @@
   @media (max-width: 500px) {
     .friends-left-button1, .friends-left-button2 {
       display: flex;
+      justify-content: center;
+      align-items: center;
       height: 50px;
-      width: 180px;
+      width: 150px;
       margin: 20px 10px 0 0;
+      border-radius: 50px;
     }
     .all-friends {
       height: 60px;
-      align-items: center;
     }
 
     .suggestions {
@@ -658,6 +660,7 @@
 
     .friend-suggestions, .friend-all {
       display: flex;
+      padding-right: 15px;
     }
 
     .friends-left-title {
@@ -670,7 +673,7 @@
 
     .friends-left-header {
       width: 100vw;
-      height: 10vh;
+      height: 5vh;
       margin-top: 20px;
     }
   }
