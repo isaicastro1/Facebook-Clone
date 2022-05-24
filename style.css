@@ -45,6 +45,10 @@
     margin: 0;
   }
 
+  .friends-left-button1, .friends-left-button2 {
+    display: none;
+  }
+
   .friends-header-buttons {
     display: flex;
   }
@@ -625,6 +629,29 @@
   }
 
   @media (max-width: 500px) {
+    .friends-left-button1, .friends-left-button2 {
+      display: flex;
+      height: 50px;
+      width: 180px;
+      margin: 20px 10px 0 0;
+    }
+    .all-friends {
+      height: 60px;
+      align-items: center;
+    }
+
+    .suggestions {
+      display: none;
+    }
+
+    .friends-left-nav-headers, .friend-all {
+      display: none
+    }
+
+    .friends-left-btns {
+      display: none;
+    }
+
     .home, .requests, .personalized {
       display: none;
     }
@@ -644,6 +671,7 @@
     .friends-left-header {
       width: 100vw;
       height: 10vh;
+      margin-top: 20px;
     }
   }
   
