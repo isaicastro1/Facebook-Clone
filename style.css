@@ -79,7 +79,7 @@
     border-radius: 10px;
   }
 
-  .friends-left-nav:hover {
+  .friends-left-button1:hover, .friends-left-button2:hover {
     background-color: var(--hover);
     cursor: pointer;
   }
@@ -647,7 +647,11 @@
     }
 
     .friends-left-nav-headers, .friend-all {
-      display: none
+      display: none;
+    }
+
+    .all-friends {
+      color: white;
     }
 
     .friends-left-btns {
