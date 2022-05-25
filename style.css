@@ -781,6 +781,10 @@
       color: white;
     }
 
+    .friends-req-right {
+      display: none;
+    }
+
   }
   
   @media (max-width: 600px) {
