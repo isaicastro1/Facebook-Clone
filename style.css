@@ -40,9 +40,8 @@
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    padding-left: 30px;
     width: 12vw;
-    margin: 0;
+    margin-left: 20px;
   }
 
   .friends-left-button1, .friends-left-button2 {
@@ -67,7 +66,7 @@
 
   .friends-settings:hover  {
     cursor: pointer;
-    background-color: #e4e6eb;
+    background-color: var(--hover);
   }
 
   .friends-left-nav {
@@ -80,7 +79,7 @@
   }
 
   .friends-left-button1:hover, .friends-left-button2:hover {
-    background-color: var(--hover);
+    background-color: #f0f2f5;
     cursor: pointer;
   }
 
@@ -93,6 +92,14 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     padding-left: 15px;
+  }
+
+  .friend-requests-hdr {
+    display: none;
+  }
+
+  .friends-requests-not {
+    display: none;
   }
 
   img {
@@ -680,6 +687,72 @@
       height: 5vh;
       margin-top: 20px;
     }
+
+    .friend-requests-hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      margin: 20px 0 10px 20px;
+    }
+
+    .friends-link {
+      font-size: larger;
+      margin-right: 10px;
+    }
+
+    .friends-requests-not {
+      display: flex;
+      height: 140px;
+      width: 100vw;
+    }
+
+    .friend-req-img {
+      align-self: center;
+      max-width: 30vw;
+    }
+
+    .friend-request-img {
+      max-width: 80px;
+      max-height: 80px;
+      padding: 10px;
+    }
+
+    .friend-req-name {
+      vertical-align: top;
+      margin: 30px 0 0 10px;
+      max-height: 40px;
+      font-size:x-large;
+      font-weight: 100;
+    }
+
+    .friend-req-info {
+      width: 80vw;
+    }
+
+    .confirm-btn, .delete-btn {
+      align-items: center;
+      height: 40px;
+      width: 35vw;
+      border-radius: 10px;
+      margin-right: 10px;
+      font-size:x-large;
+      margin-top: 30px;
+    }
+
+    .confirm-btn-name, .delete-btn-name {
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size:medium;
+      font-weight:normal;
+      margin: 0;
+    }
+
+    .confirm-btn {
+      background-color: #1b74e4;
+      color: white;
+    }
+
   }
   
   @media (max-width: 600px) {
