@@ -643,7 +643,7 @@
       align-items: center;
       height: 40px;
       width: 140px;
-      margin: 20px 10px 0 0;
+      margin: 30px 10px 0 0;
       border-radius: 50px;
     }
     .all-friends {
@@ -684,9 +684,10 @@
     }
 
     .friends-left-header {
-      width: 100vw;
+      /* width: 100vw;
       height: 5vh;
-      margin-top: 20px;
+      margin-top: 20px; */
+      display: none;
     }
 
     .friend-requests-hdr {
@@ -697,8 +698,12 @@
       margin: 20px 0 0 20px;
     }
 
-    .friends-link {
+    .friend-requests-title {
       font-size: larger;
+    }
+
+    .friends-link {
+      font-size: large;
       margin-right: 10px;
     }
 
@@ -723,7 +728,7 @@
       vertical-align: top;
       margin: 10px 0 0 10px;
       max-height: 40px;
-      font-size:x-large;
+      font-size: large;
       font-weight: 100;
     }
 
