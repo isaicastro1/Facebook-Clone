@@ -105,6 +105,10 @@
     padding-left: 15px;
   }
 
+  .friends-req-right {
+    display: none;
+  }
+
   .friend-requests-hdr {
     display: none;
   }
@@ -690,8 +694,8 @@
     }
 
     .friends-left {
-      height: 200vw;
-      max-height: 200vw;
+      min-height: 1100px;
+      max-height: auto;
       width: 100vw;
     }
 
@@ -760,11 +764,13 @@
 
     .confirm-btn, .delete-btn {
       align-items: center;
+      position: relative;
       height: 40px;
+      min-width: 20vw;
       width: 35vw;
       border-radius: 10px;
-      margin-right: 10px;
-      font-size:x-large;
+      /* margin-right: 10px; */
+      font-size: x-large;
       margin-top: 35px;
     }
 
