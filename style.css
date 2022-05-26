@@ -22,7 +22,7 @@
   }
 
   .friends-left {
-    height: 100vw;
+    height: 100vh;
     max-height: 200vh;
     background-color: white;
     width: 360px;
@@ -680,11 +680,14 @@
       display: none;
     }
 
-    .home, .requests, .personalized {
+    .home, 
+    .requests, 
+    .personalized {
       display: none;
     }
 
-    .friend-suggestions, .friend-all {
+    .friend-suggestions, 
+    .friend-all {
       display: flex;
       padding-right: 5px;
     }
@@ -767,9 +770,9 @@
       position: relative;
       height: 40px;
       min-width: 20vw;
-      width: 35vw;
+      width: 30vw;
       border-radius: 10px;
-      /* margin-right: 10px; */
+      margin-right: 10px;
       font-size: x-large;
       margin-top: 35px;
     }
