@@ -1,6 +1,7 @@
 :root {
     --primary: #ddd;
     --dark: #333;
+    --gray: #d1d1d1;
     --light: #6da8f3;
     --blue: #1877f2;
     --hover: #dedddd;
@@ -19,20 +20,15 @@
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
-    background: #EBEDF0;
+    background: var(--gray);
   }
 
   section {
     max-width: 1600px;
   }
 
-  .all-posts {
-    /* display: grid; */
-
-  }
-
   img {
-    border-radius: 50px;
+    border-radius: 50%;
   }
   
   /* Navigation */
@@ -183,40 +179,38 @@
   }
 
   .friend-name {
-    width: 12rem;
+    width: 15rem;
     padding: 10px;
   }
 
   .name {
-    padding: 0 10px 0 10px;
+    text-align: start;
+    padding: 0 20px 0 20px;
+    height: auto;
+    font-size: .9375rem;
   }
 
   .posts {
     max-width: 80vw;
     margin-top: 70px;
   }
-  
-  right-img, friend-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100px;
-    max-height: 100px;
-  }
 
   .friend-img {
     display: flex;
     justify-content: center;
-    max-width: 40px;
-    max-height: 40px;
-    padding: 25px;
+    border-radius: 50%;
+    min-width: 50px;
+    width: 50px;
+    min-height: 50px;
+    height: 50px;
+    margin: 25px;
   }
 
   .my-profile-img {
     align-items: center;
     margin: 0 20px 0 20px;
-    min-width: auto;
-    min-height: auto;
+    width: 40px;
+    max-height: 40px;
   }
 
   img:hover {
@@ -264,7 +258,7 @@
     padding: 10px;
     margin: 10px 15px 10px 10px;
     border: none;
-    background-color: #f0f2f5;
+    background-color: var(--gray);
   }
 
   .my-post-input:hover {
@@ -311,7 +305,7 @@
     position: absolute;
     left: 0;
     padding: 9px;
-    max-width: 28px;
+    width: 28px;
     max-height: 28px;
     object-fit: cover;
   }

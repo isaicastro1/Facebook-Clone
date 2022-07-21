@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" 
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" 
+    crossorigin="anonymous"
+    >
+    
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="title">
+        <a href="home.html"><button class="title-btn"><h1 class="brand-title">Facebook</h1></button></a>
+      </div>
+      <nav class="icons">
+        <div class="icon">
+          <button class="icon"><i class="fa-solid fa-newspaper newsfeed-icon"></i></button>
+        </div>
+        <div class="icon">
+          <button class="icon"><i class="fa-solid fa-user-group friends-icon"></i></button>
+        </div>
+        <div class="icon">
+          <button class="icon"><i class="fa-solid fa-comment messages-icon"></i></button>
+        </div>
+        <div class="icon">
+          <button class="icon"><i class="fa-solid fa-bell notifications-icon"></i></button>
+        </div>
+        <div class="icon">
+          <button class="icon"><i class="fa fa-search search-icon"></i></button>
+        </div>
+      </nav>
+      <div class="popover__wrapper">
+        <a href="#" class="popover">
+          <a href="#" class="toggle-button popover__title">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </a>
+        <div class="popover__content">
+          <button class="popover__message popover-btn profile-nav">Profile</button>
+          <button class="popover__message popover-btn news-nav">News</button>
+          <button class="popover__message popover-btn groups-nav">Groups</button>
+          <button class="popover__message popover-btn marketplace-nav">Marketplace</button>
+          <button class="popover__message popover-btn about-nav">About</button>
+          <a href="index.html"><button class="popover__message popover-btn log-out-nav">Log Out</button></a>
+        </div>
+      </div>
+    </nav>
+      <!-- Left Bar -->
+      <section class="friends">
+        <div class="left-side">
+          <div class="sub">
+            <img class ="sub-img" src="/Images/cars.jpg" alt="" />
+            <p class="left-sub">Isai Castro</p>
+          </div>
+          <div class="sub">
+            <img class ="sub-img" src="/images/news.png" alt="" />
+            <p class="left-sub">News</p>
+          </div>
+          <div class="sub">
+            <img class ="sub-img" src="/images/groups.jpeg" alt="" />
+            <p class="left-sub">Groups</p>
+          </div>
+          <div class="sub">
+            <img class ="sub-img" src="/images/marketplace.png" alt="" />
+            <p class="left-sub">Marketplace</p>
+          </div>
+        </div>
+        <!-- Posts of Friends -->
+        <div class="posts">
+          <div class="my-post"><img class="my-profile-img" src="/Images/cars.jpg" alt="" /><input class ="my-post-input" type="text" placeholder="What are you thinking?">
+          </div>
+            <div class="friend-p friend1">
+              <div class="friend-head">
+                <img class="friend-img" src="/Images/girl.jpg" alt="" />
+                <h3 class="friend-name">Alessandra R</h3>
+                <div class="post-settings">
+                  <button class="post-settings-btn">...</button>
+                </div>
+              </div>
+              <p class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque quaerat, molestias unde velit repellat architecto labore possimus corrupti officiis?</p>
+            </div>
+            <div class="image-post">
+              <img class="friend-img-post" src="/Images/girl-camera.jpg" alt="" />
+            </div>
+            <div class="post-btn">
+              <div class="reaction-btns">
+                <button class="like">Like</button>
+                <button class="comment">Comment</button>
+                <button class="share">Share</button>
+              </div>
+            </div>
+            <div class="friend-p friend2">
+              <div class="friend-head">
+                <img class="friend-img" src="/Images/man.jpg" alt="" />
+                <h3 class="friend-name">Sammy P</h3>
+                <div class="post-settings">
+                  <button class="post-settings-btn">...</button>
+                </div>
+              </div>
+              <p class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque quaerat, molestias unde velit repellat architecto labore possimus corrupti officiis?</p>
+            </div>
+            <div class="image-post">
+              <img class="friend-img-post" src="/Images/camping.jpg" alt="" />
+            </div>
+            <div class="post-btn">
+              <div class="reaction-btns">
+                <button class="like">Like</button>
+                <button class="comment">Comment</button>
+                <button class="share">Share</button>
+              </div>
+            </div>
+            <div class="friend-p friend3">
+              <div class="friend-head">
+                <img class="friend-img" src="/Images/mountain.jpg" alt="" />
+                <h3 class="friend-name">Aaron M</h3>
+                <div class="post-settings">
+                  <button class="post-settings-btn">...</button>
+                </div>
+              </div>
+              <p class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque quaerat, molestias unde velit repellat architecto labore possimus corrupti officiis?</p>
+            </div>
+            <div class="image-post">
+              <img class="friend-img-post" src="/Images/motorcycle.jpg" alt="" />
+            </div>
+            <div class="post-btn">
+              <div class="reaction-btns">
+                <button class="like">Like</button>
+                <button class="comment">Comment</button>
+                <button class="share">Share</button>
+              </div>
+            </div>
+        </div>
+        <!-- Right Bar -->
+        <div class="right-side">
+          <div class="friend-bar">
+            <h3 class="online-friends">Friends</h3>
+            <button class="search-friends-btn"><i class="fa fa-search"></i></button>
+          </div>
+          <hr class="right-bar-hr">
+          <div class="sub">
+            <img class="sub-img" src="/Images/fishing.jpg" alt="" />
+            <p class="right-sub">Jose R</p>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="/Images/couple.jpg" alt="" />
+            <p class="right-sub">Javier C</p>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="/Images/mountain-couple.jpg" alt="" />
+            <p class="right-sub">Micky R</p>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="/Images/road.jpg" alt="" />
+            <p class="right-sub">Luis E</p>
+          </div>
+          <div class="sub">
+            <img class="sub-img" src="/Images/wallet.jpg" alt="" />
+            <p class="right-sub">July S</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
