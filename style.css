@@ -526,7 +526,6 @@
   
   .popover__wrapper {
     position: absolute;
-    /* margin-top: 0.2rem; */
     right: -10px;
     display: inline-block;
   }
