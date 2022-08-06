@@ -484,6 +484,7 @@
 
   .icon {
     display: block;
+    text-align: center;
     font-size: larger;
     width: 20vw;
     min-width: 5vw;
@@ -525,8 +526,8 @@
   
   .popover__wrapper {
     position: absolute;
-    margin-top: 0.2rem;
-    right: 0;
+    /* margin-top: 0.2rem; */
+    right: -10px;
     display: inline-block;
   }
 
@@ -686,9 +687,9 @@
       align-items: center;
     }
 
-    .fa-search {
+    /* .fa-search {
       margin-right: 1rem;
-    }
+    } */
 
     .friend {
       height: 130vw;
