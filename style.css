@@ -23,10 +23,6 @@ body {
   background: var(--gray);
 }
 
-section {
-  max-width: 1600px;
-}
-
 img {
   border-radius: 50%;
 }
@@ -155,7 +151,6 @@ textarea {
   min-height: 200vh;
   max-height: auto;
   width: 100vw;
-  max-width: 1500px;
 }
 
 .friend-head {
@@ -687,10 +682,6 @@ a {
     align-items: center;
   }
 
-  /* .fa-search {
-      margin-right: 1rem;
-    } */
-
   .friend {
     height: 130vw;
   }
@@ -841,7 +832,6 @@ a {
   .friends-left {
     height: 1100px;
     max-height: 960px;
-    /* position:fixed; */
     top: 0;
     left: 0;
     width: 360px;
@@ -855,13 +845,16 @@ a {
     margin-left: 30px;
     margin-top: 85px;
     width: 20vw;
+    max-width: 25vw;
     background-color: white;
   }
 
   .right-side {
+    position: fixed;
     width: 20vw;
     max-width: 25vw;
     right: 1vw;
+    grid-column: 3/4;
   }
 
   .posts {
